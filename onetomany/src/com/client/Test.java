@@ -22,6 +22,11 @@ public class Test {
 		e2.setEid(2);
 		e2.setEname("pqr");
 		
+		Employee e3=new Employee();
+		e3.setEid(3);
+		e3.setEname("abcd");
+		
+		
 		// parent object
 		Department d1=new Department();
 		d1.setDid(1);
@@ -31,6 +36,7 @@ public class Test {
 		d1.getE().add(e2);
 		d1.getE().add(e1);
 		d1.getE().add(e1);
+		d1.getE().add(e3);
 		
 		session1.persist(d1);
 		session1.beginTransaction().commit();
