@@ -29,11 +29,11 @@ public class Test {
 		
 		// parent object
 		Department d1=new Department();
-		d1.setDid(1);
+		d1.setDid(101);
 		d1.setDname("pqr");
 
 		Department hr=new Department();
-		hr.setDid(101);
+		hr.setDid(102);
 		hr.setDname("hr");
 		
 		
