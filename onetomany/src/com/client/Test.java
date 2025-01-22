@@ -31,12 +31,19 @@ public class Test {
 		Department d1=new Department();
 		d1.setDid(1);
 		d1.setDname("pqr");
+
+		Department hr=new Department();
+		hr.setDid(101);
+		hr.setDname("hr");
+		
 		
 		d1.getE().add(e2);
 		d1.getE().add(e2);
 		d1.getE().add(e1);
 		d1.getE().add(e1);
 		d1.getE().add(e3);
+		hr.getE().add(e1);
+		hr.getE().add(e2);
 		
 		session1.persist(d1);
 		session1.beginTransaction().commit();
